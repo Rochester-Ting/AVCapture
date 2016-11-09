@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVCaptureSession画面采集" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNT-2C-RYV">
+                                <state key="normal" title="停止录制"/>
+                                <connections>
+                                    <action selector="stopCapture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Evh-bD-8tE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9be-VA-IJH">
+                                <state key="normal" title="开始录制"/>
+                                <connections>
+                                    <action selector="startCapture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TcE-ul-RnE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVQ-93-3e4">
+                                <state key="normal" title="旋转镜头"/>
+                                <connections>
+                                    <action selector="rotateCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tYb-eu-yfe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ht-Df-bw9">
+                                <state key="normal" title="清理"/>
+                                <connections>
+                                    <action selector="clean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PgS-aO-IzB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnX-N3-EBC">
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QFW-Rj-AEL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bVQ-93-3e4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Vz-w3-yPR"/>
+                            <constraint firstItem="4Ht-Df-bw9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="60" id="2Eu-dU-yof"/>
+                            <constraint firstItem="aNT-2C-RYV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9kz-xR-5Fb"/>
+                            <constraint firstItem="RnX-N3-EBC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="ALh-v2-4yw"/>
+                            <constraint firstItem="9be-VA-IJH" firstAttribute="top" secondItem="bVQ-93-3e4" secondAttribute="bottom" constant="20" id="bXP-U7-kxm"/>
+                            <constraint firstItem="aNT-2C-RYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c13-jc-Ngm"/>
+                            <constraint firstItem="bVQ-93-3e4" firstAttribute="top" secondItem="4Ht-Df-bw9" secondAttribute="bottom" constant="40" id="hbI-Rt-S16"/>
+                            <constraint firstItem="bVQ-93-3e4" firstAttribute="top" secondItem="RnX-N3-EBC" secondAttribute="bottom" constant="40" id="iPd-ij-7kA"/>
+                            <constraint firstItem="9be-VA-IJH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="nYd-MP-wZO"/>
+                            <constraint firstItem="9be-VA-IJH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vGa-Xi-gs8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
